@@ -41,8 +41,8 @@ jobs:
            GITHUB: https://raw.githubusercontent.com/BiTGApps
          run: |
            cd BiTGApps/BiTGApps
-           curl -sLo bitgapps.patch $GITHUB/BiTGApps-Patches/master/patches/bitgapps.patch
-           git apply bitgapps.patch
+           curl -sLo systemless.patch $GITHUB/BiTGApps-Patches/master/systemless.patch
+           git apply systemless.patch
            cd ../..
 
        - name: Build BiTGApps Package
